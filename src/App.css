@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 800px;
+  background-color: var(--white);
+  margin: 50px 0px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 25px -25px rgba(66, 68, 90, 1);
+  padding-bottom: 0;
+}
+
+.notification-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.notification-counter h2 {
+  color: var(--very-dark-blue);
+  margin: 0;
+  padding: 0;
+}
+
+.notification-counter #count {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 2px 12px;
+  font-size: 1rem;
+  border-radius: 7px;
+  position: relative;
+  right: -5px;
+  top: -3px;
+}
+
+.notification {
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.notification img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.notification #nick {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+}
+
+.notification #nick:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.notification #type {
+  color: var(--dark-grayish-blue);
+}
+
+.notification #post {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+}
+
+.notification #post:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.notification #group-info {
+  color: var(--blue);
+  font-weight: 800;
+}
+.notification #group-info:hover {
+  cursor: pointer;
+}
+
+.notification #dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+
+.notification .time {
+  color: var(--grayish-blue);
+}
+
+.notification .message-section {
+  padding: 20px;
+  border: 1px solid var(--light-grayish-blue-2);
+  color: var(--dark-grayish-blue);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.notification .message-section:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue-1);
+}
+
+.notification .image-comment {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-comment picture {
+  width: 50px;
+  height: 50px;
+}
+
+.image-comment img {
+  width: 50px;
+  height: 50px;
+}
+
+.image-comment img:hover {
+  cursor: pointer;
+  border: 2px solid var(--light-grayish-blue-2);
+  border-radius: 10px;
+}
+
+.container .read-all {
+  color: var(--dark-grayish-blue);
+}
+
+.container .read-all:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+@media (max-width: 800px) {
+  .container {
+    margin: 0;
+    padding: 15px;
+  }
+}
+
+
+
